@@ -48,22 +48,13 @@ reset.addEventListener('click', () => {
   points.innerHTML = 0;
   guesses.innerHTML = 0;
   shuffle(COLORS);
-
-  firstCard = null;
-  secondCard = null;
-  hasFlippedCard = false;
-  lockBoard = false;
-
+  resetBoard();
   for(let i=3;i<x.length;i++){
     x[i].setAttribute('class', `${colors[i-3]}`);
     x[i].setAttribute('style', '');
     //need to add event listerner back after the cards have been flipped
     x[i].addEventListener('click', handleCardClick);
-
   }
-
-  // for(let j=3;j<x.length;j++){
-  // }
 });
 
 //generate cards and add class & click to each div
