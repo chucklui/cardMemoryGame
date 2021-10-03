@@ -86,3 +86,6 @@ h1 {
   right: 49px;
   background-color: rgb(179, 231, 102);
 }
+#rank {
+  border: 1px solid black;
+}
