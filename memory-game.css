@@ -89,3 +89,7 @@ h1 {
 #rank {
   border: 1px solid black;
 }
+th, td{
+  border-bottom: 1px solid black;
+  text-align: center;
+}
